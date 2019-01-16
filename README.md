@@ -1,6 +1,6 @@
 # Javascript Data Structures
 
-This repo is meant as an exploration of common data structures.
+This repository is meant as an exploration of common data structures.
 
 It uses Javascript to implement the common methods associated with the data structures.
 
@@ -13,7 +13,7 @@ In certain situations, it uses built-in methods for simplicity.
 | Graph | | |
 | Hash Table | | |
 | Linked List (Doubly) | | |
-| Linked List (Singly) | | |
+| Linked List (Singly) | [Singly Linked List Class](./linked-list-singly/llsinglyClass.js) | |
 | Queue | | |
 | Set | | |
 | Stack | | |
@@ -22,15 +22,15 @@ In certain situations, it uses built-in methods for simplicity.
 
 BigO References
 
-Average [Worst] Complexity
+Average Time Complexity
 | Data Structure | Access | Search | Insertion | Deletion |
 | --- | --- | --- | --- | --- |
-| Arrays | O(1) [O(1)] | O(n) [O(n)] | O(n) [O(n)] | O(n) [O(n)] |
+| Arrays | O(1) | O(n) | O(n) | O(n) |
 | Binary Search Tree (BST) | | | | |
 | Graph | | | | |
 | Hash Table | | | | |
 | Linked List (Doubly) | | | | |
-| Linked List (Singly) | | | | |
+| Linked List (Singly) | O(n) | O(n) | O(1) | O(1) |
 | Queue | | | | |
 | Set | | | | |
 | Stack | | | | |
