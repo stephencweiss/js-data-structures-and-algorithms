@@ -16,7 +16,7 @@ In certain situations, it uses built-in methods for simplicity.
 | Linked List (Singly) | [Singly Linked List Class](./linked-list-singly/llsinglyClass.js) | |
 | Queue | | |
 | Set | | |
-| Stack | [Stack Class](./stack/stackClass.js) | |
+| [Stack](./stack/README) | [Stack Class](./stack/stackClass.js) | |
 | Tree | | |
 | Trie | | |
 
