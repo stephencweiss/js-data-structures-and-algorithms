@@ -19,22 +19,6 @@ function findShortestPath(vertices, graph) {
   return memo;
 }
 
-function checkForNegativeCycles(vertex, graph, memo) {
-  let negativeCycle = false;
-  const edges = graph.filter(edge => edge.from === vertex)
-
-  // evaluate a potential negative cycle
-  edges.forEach(edge => {
-    const costTo = memo[edge.to]
-    const costFrom = memo[edge.from] + edge.cost
-    if (costTo > costFrom) {
-        negativeCycle = true;
-    }
-  })
-  return negativeCycle;;
-}
-
-
 function iterateBellmanFord(graph, memo){
   let doItAgain = false;
   // for all vertices
@@ -57,6 +41,20 @@ function iterateBellmanFord(graph, memo){
   return doItAgain
 }
 
+function checkForNegativeCycles(vertex, graph, memo) {
+  let negativeCycle = false;
+  const edges = graph.filter(edge => edge.from === vertex)
+
+  // evaluate a potential negative cycle
+  edges.forEach(edge => {
+    const costTo = memo[edge.to]
+    const costFrom = memo[edge.from] + edge.cost
+    if (costTo > costFrom) {
+        negativeCycle = true;
+    }
+  })
+  return negativeCycle;;
+}
 console.log(findShortestPath(vertices, negativeCycleGraph));
 console.log(findShortestPath(vertices, negativeGraph));
 console.log(findShortestPath(vertices, positiveGraph));
