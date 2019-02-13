@@ -16,13 +16,14 @@ In certain situations, it uses built-in methods for simplicity.
 | Linked List (Singly) | [Singly Linked List Class](./linked-list-singly/llsinglyClass.js) | |
 | Queue | | |
 | Set | | |
-| Stack | | |
+| Stack | [Stack Class](./stack/stackClass.js) | |
 | Tree | | |
 | Trie | | |
 
 BigO References
 
 Average Time Complexity
+
 | Data Structure | Access | Search | Insertion | Deletion |
 | --- | --- | --- | --- | --- |
 | Arrays | O(1) | O(n) | O(n) | O(n) |
@@ -37,3 +38,8 @@ Average Time Complexity
 | Tree | | | | |
 | Trie | | | | |
 
+# Classic Algorithms
+I've also implemented a few algorithms associated with these data structures.
+
+* [Bellman-Ford Shortest Path Graph Traversal](./graph-traversal/bellmanFord.js)
+* [Djikstra Shortest Path Graph Traversal](./graph-traversal/djikstra.js)
