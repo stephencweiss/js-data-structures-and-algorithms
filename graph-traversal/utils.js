@@ -9,13 +9,19 @@ function createMemo (vertices) {
 
 class MemoTable {
   constructor(vertices) {
-    let source = {name:`s`, cost: 0, visited: false}
-    this.table = [source]
-    vertices.forEach(vertex => this.table.push({
-      name: vertex,
-      cost: Number.POSITIVE_INFINITY,
-      visited: false
-    }))
+    this.table = []
+    vertices.forEach(vertex => {
+      const defaultObj = {
+        name: vertex,
+        cost: Number.POSITIVE_INFINITY,
+        visited: false
+      }
+
+      if (vertex === 's') {
+        defaultObj.cost = 0
+      }
+      this.table.push(defaultObj)
+    })
   }
 
   /**
