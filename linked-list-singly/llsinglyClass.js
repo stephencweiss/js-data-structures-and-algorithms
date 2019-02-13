@@ -32,7 +32,7 @@ class SinglyLinkedList {
   search(value) {
     let current = this.head;
     while (current) {
-      if (current === value ) {
+      if (current.value === value ) {
         return true;
       }
       current = current.next;
@@ -139,4 +139,5 @@ singlyLL.insertAfter(8, 2); // no effect
 singlyLL.traverse(addOne);
 console.log(singlyLL.print()) // 2 4 5
 singlyLL.addToTail(6);
+console.log(singlyLL.search(6)); // true
 console.log(singlyLL.print()); // 2 4 6
